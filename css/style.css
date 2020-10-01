@@ -20,6 +20,12 @@ HEADING
   color: var(--primary-color);
 }
 
+.h1-dot {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10rem;
+  color: var(--third-color);
+}
+
 a:link {
   text-decoration: none;
   color: var(--primary-color);
@@ -47,6 +53,12 @@ nav ul {
 }
 
 h2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+h3 {
   font-family: "Bebas Neue", cursive;
   font-weight: lighter;
   font-size: 2em;
