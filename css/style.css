@@ -5,9 +5,9 @@ font-family: 'Montserrat', sans-serif;*/
 GENERAL
 *********************/
 :root {
-    --primary-color: white;
-    --secondary-color: dodgerblue;
-    --third-color: salmon;
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(28, 141, 255);
+  --third-color: rgb(230, 64, 46);
 }
 
 /********************
@@ -15,51 +15,44 @@ HEADING
 *********************/
 
 .header-h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 4em;
-    background-color: black;
-    color:var(--primary-color);
-    padding: 0%;
-    margin: 0%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;
+  color: var(--primary-color);
 }
 
 a:link {
-    text-decoration: none ;
-    color:var(--primary-color);
-    
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 a:hover {
-    text-decoration: none;
-    color:var(--secondary-color);
-    transition: color 1s;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 1s;
 }
 
 /********************
 NAVIGATION
 *********************/
-.navigation {
-    background-color: black;
-    font-family: 'Bebas Neue', cursive;
-    color:var(--primary-color);
-    font-size: 2em;
-    padding: 0%;
-    margin: 0%;
-}
 
 nav {
-    text-align: right; 
-    padding: 10px 0;
-    margin: 20px 0 0;
-  }
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  color: var(--primary-color);
+  font-size: 2em;
+}
 
 nav ul {
-    list-style: none;
-    margin: 0 10px;
-    padding: 0;
-  }
+  list-style: none;
+}
 
-nav li {
-    display: inline-block;
-  }
-  
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+}
