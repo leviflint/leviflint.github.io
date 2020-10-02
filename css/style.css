@@ -82,3 +82,30 @@ article h3 {
   border-radius: 25px;
 
 }
+
+.gh-icon {
+  transition: all .3s ease-in-out;
+}
+
+.gh-icon:hover {
+  
+  transform: scale(1.2);
+}
+
+.gm-icon {
+  transition: all .3s ease-in-out;
+}
+
+.gm-icon:hover {
+  
+  transform: scale(1.2);
+}
+
+.li-icon {
+  transition: all .3s ease-in-out;
+}
+
+.li-icon:hover {
+  
+  transform: scale(1.2);
+}
