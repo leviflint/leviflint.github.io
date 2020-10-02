@@ -7,7 +7,7 @@ GENERAL
 :root {
   --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(28, 141, 255);
-  --third-color: rgb(230, 64, 46);
+  --third-color: rgb(228, 87, 72);
 }
 
 /********************
@@ -51,6 +51,11 @@ nav {
   font-weight: lighter;
   color: var(--primary-color);
   font-size: 2em;
+}
+
+.header-h1 a:hover {
+  color: var(--third-color);
+  transition: color 1s;
 }
 
 nav ul {
