@@ -37,7 +37,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 5rem;
+  padding: 0 0 0 50px;
   min-height: 5vh;
 }
 
@@ -63,13 +63,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .about-me-img {
-  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+section {
+  display: grid;
+  grid-template-columns: 15% 15% 40% 15% 15%;
+}
+
+section li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  grid-column: 3 / 4;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 5vh;
 }
