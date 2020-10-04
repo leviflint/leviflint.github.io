@@ -39,6 +39,10 @@ nav {
   justify-content: space-between;
   padding: 0 0 0 50px;
   min-height: 5vh;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  min-width: ;
 }
 
 .nav-links {
@@ -66,16 +70,7 @@ nav {
 
 .about-me {
   grid-column: 3 / 4;
-  padding-top: 300px;
-}
-
-.about-me-p {
-  grid-column: 3 / 4;
-  display: inline-block;
-}
-
-.about-me h2 {
-  grid-column: 3 / 4;
+  padding-top: 20%;
 }
 
 .about-me p {
