@@ -36,18 +36,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 5%;
   min-height: 5vh;
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  min-width: ;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  padding-right: 10px;
+  padding-right: 2%;
 }
 
 .nav-links li {
@@ -60,56 +59,64 @@ nav {
   left: 0;
   z-index: 9999;
   width: 100%;
-}
-
-.about-me-img {
-  grid-column: 3 / 4;
-  max-width: 100%;
+  padding-bottom: 25vh;
 }
 
 .about-me {
-  grid-column: 3 / 4;
-  padding-top: 20%;
+  display: grid;
+  grid-template-columns: 10% 40% 30% 20%;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-gap: 1%;
+  padding-top: 5%;
+}
+
+.about-me-h2 {
+  grid-row: 2/2;
+  grid-column: 3/3;
+  align-self: start;
+}
+
+.about-me-img {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  max-width: 100%;
+  align-self: center;
 }
 
 .about-me p {
-  grid-column: 3 / 4;
+  grid-column: 3/3;
+  grid-row: 2/2;
+  align-self: center;
 }
 
-.about-me ul {
-  grid-column: 3 / 4;
-}
-
-section {
+.portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr 25vw 1fr 1fr;
+  grid-template-columns: 10% 40% 40% 20%;
+  grid-template-rows: auto auto auto;
+  row-gap: 5%;
 }
 
-article {
-  grid-column: 3 / 4;
-  display: inline-block;
-  padding-top: 125px;
-}
-
-.virtual-pet{
-  padding-top: 20px;
-}
-
-.vps-screenshot {
-  grid-column: 3 / 4;
-  max-width: 100%;
-}
-
-.gh-screenshot {
-  grid-column: 3 / 4;
-  max-width: 100%;
+article, .virtual-pet {
+  grid-row: 1/1;
+  grid-column: 2/3;
 }
 
 section h2 {
-  grid-column: 3 / 4;
+  grid-column: 2/3;
 }
 
-.contact h2{
+.fizzbuzz {
+  grid-row: 2/2;
+}
+
+.website {
+  grid-row: 3/3;
+}
+
+.contact-h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 100px;
 }
 
@@ -119,7 +126,7 @@ section h2 {
   justify-content: space-evenly;
   max-width: 100%;
   align-items: center;
-  padding-top: 75px;
+  padding-top: 3%;
 }
 
 footer {
@@ -127,4 +134,5 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 5vh;
+  padding-top: 2%;
 }

@@ -31,43 +31,35 @@
     <link rel="stylesheet" href="/css/layout.css" />
     <link rel="stylesheet" href="css/Responsive.css"/>
   </head>
-  <header class="header">
-    <nav class="nav-bar">
-      <h1 class="header-h1"><a href="#about-me">Levi Schroeder</h1>
-      <ul class="nav-links">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact Me!</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="parent">
     <body>
+      <header class="header">
+        <nav class="nav-bar">
+          <h1 class="header-h1"><a href="#about-me">Levi Schroeder</h1>
+          <ul class="nav-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me!</a></li>
+          </ul>
+        </nav>
+      </header>
       <section class="about-me" id="about-me">
         <h2 class="about-me-h2">About Me</h2>
         <img class="about-me-img" src="img/IMG_8124.jpg" alt="Levi Schroeder" />
-        <p class="about-me-p">
-          Hello and welcome to my website! My name is Levi Schroeder and I am
+        <p>
+          Hello and welcome to my website!  My name is Levi Schroeder and I am a
           programmer based in Ohio.
-          You can find my LinkedIn
+           You can find my LinkedIn
           <a href="https://www.linkedin.com/in/levi-schroeder-87b26346/">here,</a
           > and you can my Github
-          <a href="https://github.com/leviflint">here.</a>
-        </p>
-        
-        <p>Technologies I am familiar with:</p>
-        <ul>
-          <li>Java</li>
-          <li>Git</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-        </ul>
+          <a href="https://github.com/leviflint">here.</a>      
+           Technologies I am familiar with: <br><br><br> Java <br> Git <br> HTML <br> CSS <br> Javascript <br>
+      </p>
       </section>
-      <section class="portfolio" id="portfolio">
-        <article>
-          <h2>Portfolio</h2>
-          <h3 class="virtual-pet">Virtual Pet</h3>
+      <div class="portfolio">
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <article  class="virtual-pet">
+          <h3>Virtual Pet</h3>
           <p>
             Virtual Pet is a Java console game I made during my time at We Can
             Code it. This was a group project and it turned out well. You can
@@ -83,7 +75,7 @@
           /></a>
           <p>Tech used: Java, Test Driven Development.</p>
         </article>
-        <article>
+        <article class="fizzbuzz">
           <h3>FizzBuzzQix</h3>
           <p>
             Fizz, Buzz, Qix?! This is complete Fizz Buzz code with a twist. This
@@ -99,7 +91,7 @@
           /></a>
           <p>Tech used: Java, Test Driven Development.</p>
         </article>
-        <article>
+        <article class="website">
           <h3>This website!</h3>
           <p>
             This website was a weeklong assignment during my time at We Can Code
@@ -109,6 +101,7 @@
           <p>Tech used: HTML 5, CSS 3, Git.</p>
         </article>
       </section>
+    </div>
       <section class="contact" id="contact">
         <h2 class="contact-h2">Contact</h2>
         <div class="contact-icons">
@@ -135,5 +128,4 @@
     <footer>
       <p>&copy; 2020 Levi Schroeder</p>
     </footer>
-  </div>
 </html>
