@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 #videoBG {
   position: fixed;
   z-index: -1;
@@ -30,6 +24,10 @@ body {
 
 h1 {
   margin-top: 10px;
+}
+
+img {
+  max-width: 100%;
 }
 
 nav {
@@ -62,77 +60,93 @@ nav {
   padding-bottom: 25vh;
 }
 
-.about-me {
+.container {
   display: grid;
-  grid-template-columns: 10% 40% 30% 20%;
-  grid-template-rows: 20vh 60vh 20vh;
-  grid-gap: 1%;
-  padding-top: 5%;
-}
-
-.about-me-h2 {
-  grid-row: 2/2;
-  grid-column: 3/3;
-  align-self: start;
-}
-
-.about-me-img {
-  grid-column: 2/2;
-  grid-row: 2/2;
-  max-width: 100%;
-  align-self: center;
-}
-
-.about-me p {
-  grid-column: 3/3;
-  grid-row: 2/2;
-  align-self: center;
-}
-
-.portfolio {
-  display: grid;
-  grid-template-columns: 10% 40% 40% 20%;
-  grid-template-rows: auto auto auto;
+  grid-template-columns:15% repeat(2, 1fr) 15%;
+  grid-template-rows: 10% 50rem 2% 2fr 2fr 3%;
+  column-gap: 1%;
   row-gap: 5%;
 }
 
-article, .virtual-pet {
-  grid-row: 1/1;
-  grid-column: 2/3;
+.about-me-h2 {
+  grid-row: 2;
+  grid-column: 1 / span 5;
+  justify-self: center;
 }
 
-section h2 {
-  grid-column: 2/3;
+.container img {
+  grid-column: 2 / 2;
+  grid-row-start: 2;
+  justify-self: right;
+  align-self: center;
+  max-width: 100%;
+}
+
+.bio {
+  grid-row-start: 2;
+  grid-column: 3/3;
+  justify-self: left;
+  align-self: center;
+  margin-right: 20%;
+}
+
+.port-h2 {
+  grid-row-start: 3;
+  grid-column: 1 / span 5;
+  justify-self: center;
+
+}
+
+.vps-screenshot {
+  grid-column-start: 3;
+  grid-row-start: 4;
+  justify-self: left;
+  align-self: center;
+}
+
+.vp-info {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  justify-self: right;
+  align-self: center;
+  margin-left: 40%;
+}
+
+.fb-img {
+  grid-column-start: 2;
+  grid-row-start: 5;
+  justify-self: right;
+  align-self: center;
 }
 
 .fizzbuzz {
-  grid-row: 2/2;
+  grid-column-start: 3;
+  grid-row-start: 5;
+  justify-self: left;
+  align-self: center;
+  margin-right: 40%;
 }
 
 .website {
-  grid-row: 3/3;
+  grid-row-start: 6;
+  grid-column: 1 / span 5;
+  text-align: center;
 }
 
-.contact-h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
+.contact {
+  grid-row-start: 7;
+  grid-column: 1 / span 5;
+  text-align: center;
 }
 
-.contact-icons {
-  display: flex;
-  grid-column: 3 / 4;
-  justify-content: space-evenly;
-  max-width: 100%;
-  align-items: center;
-  padding-top: 3%;
+.contact img {
+  margin: 0 5rem;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 5vh;
-  padding-top: 2%;
-}
+  grid-row-start: 8;
+  grid-column: 1 / span 5;
+  text-align: center;
+} 
+
+

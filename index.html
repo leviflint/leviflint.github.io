@@ -42,10 +42,11 @@
           </ul>
         </nav>
       </header>
-      <section class="about-me" id="about-me">
+      <div class="container">
         <h2 class="about-me-h2">About Me</h2>
         <img class="about-me-img" src="img/IMG_8124.jpg" alt="Levi Schroeder" />
-        <p>
+         <div class="bio">
+          <p>
           Hello and welcome to my website!  My name is Levi Schroeder and I am a
           programmer based in Ohio.
            You can find my LinkedIn
@@ -53,12 +54,20 @@
           > and you can my Github
           <a href="https://github.com/leviflint">here.</a>      
            Technologies I am familiar with: <br><br><br> Java <br> Git <br> HTML <br> CSS <br> Javascript <br>
+          </p>      
       </p>
-      </section>
-      <div class="portfolio">
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <article  class="virtual-pet">
+          </p>      
+        </div> 
+        <h2 class="port-h2">Portfolio</h2>
+        <figure class="vps-screenshot">
+          <a
+            href="https://github.com/leviflint/Virtual-Pet-Shelter"
+            ><img 
+              src="/img/virtual-pet-screenshot.png"
+              alt="Screenshot of Virtual Pet"
+          /></a>
+        </figure>
+        <div class="vp-info">
           <h3>Virtual Pet</h3>
           <p>
             Virtual Pet is a Java console game I made during my time at We Can
@@ -66,22 +75,10 @@
             adopt pets into your personal shelter and take care of them.. or
             don't.
           </p>
-          <a
-            href="https://github.com/leviflint/Virtual-Pet-Shelter"
-            ><img 
-            class="vps-screenshot"
-              src="/img/virtual-pet-screenshot.png"
-              alt="Screenshot of Virtual Pet"
-          /></a>
+          <br><br><br>
           <p>Tech used: Java, Test Driven Development.</p>
-        </article>
-        <article class="fizzbuzz">
-          <h3>FizzBuzzQix</h3>
-          <p>
-            Fizz, Buzz, Qix?! This is complete Fizz Buzz code with a twist. This
-            code also returns 7 as Qix, allowing for FizzQix, FizzBuzz and
-            BuzzQix.
-          </p>
+        </div>
+        <figure class="fb-img">
           <a
             href="https://github.com/leviflint/FizzBuzzQix"
             ><img 
@@ -89,6 +86,17 @@
               src="/img/fizzbuzzqix-screenshot.png"
               alt="Screenshot of FizzBuzzQix"
           /></a>
+        </figure>
+        <article class="fizzbuzz">
+          <h3>FizzBuzzQix</h3>
+          <p>
+            Fizz, Buzz, Qix?! This is complete Fizz Buzz code with a twist. This
+            code also returns 7 as Qix, allowing for FizzQix, FizzBuzz and
+            BuzzQix.
+          </p>
+          <br>
+          <br>
+          <br>
           <p>Tech used: Java, Test Driven Development.</p>
         </article>
         <article class="website">
@@ -100,8 +108,6 @@
           <br />
           <p>Tech used: HTML 5, CSS 3, Git.</p>
         </article>
-      </section>
-    </div>
       <section class="contact" id="contact">
         <h2 class="contact-h2">Contact</h2>
         <div class="contact-icons">
@@ -124,8 +130,9 @@
           /></a>
         </div>
       </section>
+      <footer>
+        <p>&copy; 2020 Levi Schroeder</p>
+      </footer>
     </body>
-    <footer>
-      <p>&copy; 2020 Levi Schroeder</p>
-    </footer>
+  </div>   
 </html>
